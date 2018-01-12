@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ec00fbc-3d03-4833-8b41-60ee6631a3c1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/home.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/register.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/domain/Chat.class" afterPath="$PROJECT_DIR$/out/production/chatApp/domain/Chat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/domain/Message.class" afterPath="$PROJECT_DIR$/out/production/chatApp/domain/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/interfaces/IChatManagerServer.class" afterPath="$PROJECT_DIR$/out/production/chatApp/interfaces/IChatManagerServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/server/ChatManager.class" afterPath="$PROJECT_DIR$/out/production/chatApp/server/ChatManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/ChatUI/chat.fxml" afterPath="$PROJECT_DIR$/src/client/ChatUI/chat.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/RegisterUI/register.fxml" afterPath="$PROJECT_DIR$/src/client/RegisterUI/register.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chatController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/ChatUI/chatController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
@@ -127,37 +119,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/ChatUI/chatUI.java">
+      <file leaf-file-name="loginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/LoginUI/loginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="386">
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2864#2880#0" expanded="true" />
+                <element signature="e#3849#3869#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/HomeUI/homeController.java">
+      <file leaf-file-name="register.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/register.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-549">
-              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="189">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/LoginUI/loginController.java">
+      <file leaf-file-name="registerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/registerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
+            <state relative-caret-position="-273">
+              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2864#2880#0" expanded="true" />
-                <element signature="e#3849#3869#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,6 +242,7 @@
         <option value="$PROJECT_DIR$/src/domain/Chat.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IChatManagerServer.java" />
         <option value="$PROJECT_DIR$/src/client/ChatUI/chatController.java" />
+        <option value="$PROJECT_DIR$/src/client/RegisterUI/register.fxml" />
       </list>
     </option>
   </component>
@@ -523,12 +519,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515504148056</updated>
       <workItem from="1515504150068" duration="432000" />
-      <workItem from="1515759133357" duration="13324000" />
+      <workItem from="1515759133357" duration="14200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13756000" />
+    <option name="totallyTimeSpent" value="14632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1551" height="840" extended-state="6" />
@@ -654,37 +650,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/register.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/registerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2222#2223#0" expanded="false" />
-            <element signature="e#2251#2252#0" expanded="false" />
-            <element signature="e#2592#2609#0" expanded="false" />
-            <element signature="e#3619#3620#0" expanded="false" />
-            <element signature="e#3657#3658#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,18 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/LoginUI/loginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2864#2880#0" expanded="true" />
-            <element signature="e#3849#3869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/HomeUI/homeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-549">
@@ -914,6 +872,39 @@
             <element signature="e#3595#3611#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/LoginUI/loginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2864#2880#0" expanded="true" />
+            <element signature="e#3849#3869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/registerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/RegisterUI/register.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
