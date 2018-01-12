@@ -2,10 +2,8 @@ package server;
 
 import domain.Chat;
 import domain.User;
-import interfaces.IChatManagerServer;
-import interfaces.IListener;
-import interfaces.IMessageRepo;
-import interfaces.IUserRepo;
+import interfaces.*;
+import repositories.ChatRepo;
 import repositories.MessageRepo;
 import repositories.UserRepo;
 
@@ -26,6 +24,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
 
     private IUserRepo userRepo;
     private IMessageRepo msgRepo;
+    private IChatRepo chatRepo;
     private List<IListener> listeners = new ArrayList<>();
     private Timer messageTimer;
     private boolean timerPause = true;
@@ -34,6 +33,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
         System.setProperty("java.rmi.server.hostname", "127.0.0.1");
         userRepo = new UserRepo();
         msgRepo = new MessageRepo();
+        chatRepo = new ChatRepo();
         messageTimer = new Timer();
         messageTimer.schedule(new TimerTask() {
             @Override
@@ -73,7 +73,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
 
     @Override
     public List<Chat> getChats(int id) throws RemoteException {
-        return null;
+        return chatRepo.getChats(id);
     }
 
     @Override

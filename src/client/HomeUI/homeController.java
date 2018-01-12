@@ -24,16 +24,17 @@ public class homeController {
     @FXML
     private TableColumn tc_user;
     @FXML
-    private TableColumn tc_name;
+    private TableColumn tc_chatname;
 
-    public homeController() {  // Empty constructor with declared exceptions, thus allowing form-to-form navigation.
+    public homeController() {
+        // Empty constructor with declared exceptions, thus allowing form-to-form navigation.
           }
 
     public void setSettings(Session session)
     {
         this.session = session;
         this.txt_username.setText("Hello " + session.getUser().getUsername());
-        //loadChats();
+        loadChats();
     }
 
     @FXML
@@ -41,7 +42,7 @@ public class homeController {
     {
         tv_chats.getItems().clear();
         tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("user_Name"));
-        tc_name.setCellValueFactory(new PropertyValueFactory<Chat,String>("name"));
+        tc_chatname.setCellValueFactory(new PropertyValueFactory<Chat,String>("Chatname"));
         try {
             chats = session.getServer().getChats(session.getUser().getId());
             if (!chats.isEmpty()) {
