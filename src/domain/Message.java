@@ -9,4 +9,13 @@ public class Message {
         this.msg = msg;
     }
 
+
+    public int getId() {
+        return id;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
 }

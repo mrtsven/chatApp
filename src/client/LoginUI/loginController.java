@@ -11,9 +11,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.awt.*;
+
 import java.io.IOException;
 import java.math.BigInteger;
 import java.rmi.NotBoundException;
@@ -34,7 +35,6 @@ public class loginController {
     private String ip = "127.0.0.1";
     private int port = 1099;
 
-    //FXML loads
     @FXML
     private TextField txt_username;
     @FXML

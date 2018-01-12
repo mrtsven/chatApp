@@ -25,7 +25,7 @@ import static javax.swing.JOptionPane.showMessageDialog;
 public class registerController {
 
     private Session session;
-    
+
     @FXML
     private TextField txt_username;
 

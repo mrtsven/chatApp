@@ -26,7 +26,8 @@ public class homeController {
     @FXML
     private TableColumn tc_name;
 
-    public homeController() {    }
+    public homeController() {  // Empty constructor with declared exceptions, thus allowing form-to-form navigation.
+          }
 
     public void setSettings(Session session)
     {
