@@ -52,7 +52,7 @@ public class chatController extends UnicastRemoteObject implements IListener{
     }
 
     private void updateListViewMessages() {
-        lv_messages.setCellFactory(t -> new CustomListCell(chat.getUser_Name(),lv_messages.getWidth()));
+        lv_messages.setCellFactory(t -> new CustomListCell(chat.getUser().getUsername(),lv_messages.getWidth()));
         lv_messages.getItems().clear();
         for (Message message:messages
                 ) {
