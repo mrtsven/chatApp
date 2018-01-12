@@ -60,7 +60,7 @@ public class loginController {
     @FXML
     private void login()
     {
-        User user
+        User user;
         if (!txt_username.getText().trim().isEmpty() && !txt_password.getText().trim().isEmpty() && session.getServer() != null) {
             try {
                 user = session.getServer().login(txt_username.getText(),md5(txt_password.getText()));

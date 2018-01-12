@@ -33,7 +33,7 @@ public class homeController {
     {
         this.session = session;
         this.txt_username.setText("Hello " + session.getUser().getUsername());
-        loadChats();
+        //loadChats();
     }
 
     @FXML
