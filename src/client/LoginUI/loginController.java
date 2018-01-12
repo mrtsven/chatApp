@@ -100,7 +100,7 @@ public class loginController {
         stage.show();
     }
 
-    //To register screen
+    //To registerUI screen
     @FXML
     private void toRegisterScreen()  {
         // Set the next "page" (scene) to display.
@@ -125,7 +125,7 @@ public class loginController {
         stage.show();
     }
 
-    //Protection login/register
+    //Protection loginUI/registerUI
     private String md5(String input) {
 
         String md5 = null;

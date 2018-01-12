@@ -1,4 +1,4 @@
-package client.LoginUI;
+package client.RegisterUI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,12 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class login extends Application {
+public class registerUI extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        primaryStage.setTitle("Login");
+        @Override
+        public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("register.fxml"));
+        primaryStage.setTitle("Register");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
