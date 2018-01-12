@@ -20,6 +20,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 
+import static domain.CryptWithMD5.md5;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class registerController {
@@ -80,31 +81,6 @@ public class registerController {
         stage = (Stage) txt_username.getScene().getWindow(); // Weird backwards logic trick to get the current scene window.
         stage.setScene(loginScreen);
         stage.show();
-    }
-
-    private String md5(String input) {
-
-        String md5 = null;
-
-        if (null == input) return null;
-
-        try {
-            input += "FEJOE0dC2u";
-            //Create MessageDigest object for MD5
-            MessageDigest digest = MessageDigest.getInstance("MD5");
-
-            //Update input string in message digest
-            digest.update(input.getBytes(), 0, input.length());
-
-            //Converts message digest value in base 16 (hex)
-            md5 = new BigInteger(1, digest.digest()).toString(16);
-
-        } catch (NoSuchAlgorithmException e) {
-            if (session != null) {
-                    errorServer();
-            }
-        }
-        return md5;
     }
 
     public void setSession(Session session) {

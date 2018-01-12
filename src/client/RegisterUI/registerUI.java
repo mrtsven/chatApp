@@ -12,7 +12,7 @@ public class registerUI extends Application {
         public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("register.fxml"));
         primaryStage.setTitle("Register");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 

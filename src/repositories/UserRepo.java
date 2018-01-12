@@ -24,7 +24,7 @@ public class UserRepo implements IUserRepo {
             preparedStmt.setString(2,password);
             rs = preparedStmt.executeQuery();
             if (rs.next()) {
-                user = new User(rs.getInt("id"),rs.getString("username"));
+                user = new User(rs.getInt("id_user"),rs.getString("username"));
             }
         } catch (SQLException e) {
             Logger.getGlobal().log(Level.SEVERE,"UserRepo",e);

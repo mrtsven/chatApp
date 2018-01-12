@@ -2,6 +2,7 @@ package client.LoginUI;
 
 import client.HomeUI.homeController;
 import client.RegisterUI.registerController;
+import domain.CryptWithMD5;
 import domain.Session;
 import domain.User;
 import interfaces.IChatManagerServer;
@@ -27,6 +28,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static domain.CryptWithMD5.md5;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class loginController {
@@ -58,7 +60,7 @@ public class loginController {
     @FXML
     private void login()
     {
-        User user;
+        User user
         if (!txt_username.getText().trim().isEmpty() && !txt_password.getText().trim().isEmpty() && session.getServer() != null) {
             try {
                 user = session.getServer().login(txt_username.getText(),md5(txt_password.getText()));
@@ -123,32 +125,6 @@ public class loginController {
 
         stage.setScene(registerScreen);
         stage.show();
-    }
-
-    //Protection loginUI/registerUI
-    private String md5(String input) {
-
-        String md5 = null;
-
-        if (null == input) return null;
-
-        try {
-            input += "FEJOE0dC2u";
-            //Create MessageDigest object for MD5
-            MessageDigest digest = MessageDigest.getInstance("MD5");
-
-            //Update input string in message digest
-            digest.update(input.getBytes(), 0, input.length());
-
-            //Converts message digest value in base 16 (hex)
-            md5 = new BigInteger(1, digest.digest()).toString(16);
-
-        } catch (NoSuchAlgorithmException e) {
-            if (session != null) {
-                errorServer();
-            }
-        }
-        return md5;
     }
 
 
