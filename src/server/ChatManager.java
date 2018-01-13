@@ -121,7 +121,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
             listener.setChatMessages(msgRepo.getMessages(listener.getChatId(), listener.getUserId()));
             updateListeners(listener.getChatId());
         } catch (RemoteException e) {
-            e.printStackTrace();
+            Logger.getGlobal().log(Level.SEVERE,"chatManager",e);
         }
     }
 
@@ -134,7 +134,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
                         user.setChatUsers(getChatUsers(chatId));
                     }
                 } catch (RemoteException e) {
-                    e.printStackTrace();
+                    Logger.getGlobal().log(Level.SEVERE,"chatManager",e);
                 }
             }
         }
@@ -146,7 +146,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
         try {
             chatID = listener.getChatId();
         } catch (RemoteException e) {
-            e.printStackTrace();
+            Logger.getGlobal().log(Level.SEVERE,"chatManager",e);
         }
 
         listeners.remove(listener);

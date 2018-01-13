@@ -92,7 +92,7 @@ public class UserRepo implements IUserRepo {
                 preparedStmt.execute();
                 conn.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                Logger.getGlobal().log(Level.SEVERE,"userRepo",e);
                 return false;
             }
             return true;

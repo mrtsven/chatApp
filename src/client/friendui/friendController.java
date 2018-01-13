@@ -90,14 +90,16 @@ public class friendController {
             try {
                 session.getServer().updateFriendRequest(selectedFriend.getId(),true);
             } catch (RemoteException e) {
-                e.printStackTrace();
+                Logger.getGlobal().log(Level.SEVERE,"friendController",e);
+            }
+
             }
             loadFriends();
             btn_accept.setVisible(false);
             btn_decline.setVisible(false);
             selectedFriend = null;
-        }
     }
+
     @FXML
     public void decline()
     {
@@ -106,7 +108,7 @@ public class friendController {
             try {
                 session.getServer().updateFriendRequest(selectedFriend.getId(),false);
             } catch (RemoteException e) {
-                e.printStackTrace();
+                Logger.getGlobal().log(Level.SEVERE,"friendController",e);
             }
             loadFriends();
             btn_accept.setVisible(false);
@@ -137,7 +139,7 @@ public class friendController {
                     alert.show();
                 }
             } catch (RemoteException e) {
-                e.printStackTrace();
+                Logger.getGlobal().log(Level.SEVERE,"friendController",e);
             }
         }
         else

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ec00fbc-3d03-4833-8b41-60ee6631a3c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/ChatManagerServer.java" afterPath="$PROJECT_DIR$/src/server/ChatManagerServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/friendui/friendController.java" afterPath="$PROJECT_DIR$/src/client/friendui/friendController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/FriendRepo.java" afterPath="$PROJECT_DIR$/src/repositories/FriendRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/UserRepo.java" afterPath="$PROJECT_DIR$/src/repositories/UserRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/ChatManager.java" afterPath="$PROJECT_DIR$/src/server/ChatManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,127 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="friendController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/friendui/friendController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-107">
-              <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Friend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friend.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/friendui/friend.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatManagerServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server/ChatManagerServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/FriendRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="89" column="49" lean-forward="false" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1515870397270" expanded="true" signature="499:506" ph="Select f.ID,... friend" />
-                <marker date="1515870397270" expanded="true" signature="499:723" ph="Select us.us... friend" />
-                <marker date="1515870397270" expanded="true" signature="1806:1813" ph="Select f.ID,... friend" />
-                <marker date="1515870397270" expanded="true" signature="1806:2030" ph="Select us.us... friend" />
-                <marker date="1515870397270" expanded="true" signature="3248:3310" ph="INSERT into friend... " />
-                <marker date="1515870397270" expanded="true" signature="4040:4081" ph="UPDATE frien... " />
-                <marker date="1515870397270" expanded="true" signature="4046:4054" ph="INSERT into message... " />
-                <marker date="1515870397270" expanded="true" signature="5122:5159" ph="SELECT * FRO... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/UserRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1527">
-              <caret line="93" column="38" lean-forward="false" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1515791749567" expanded="true" signature="357:410" ph="SELECT * FRO... user" />
-                <marker date="1515791749567" expanded="true" signature="1617:1654" ph="SELECT * FRO... user" />
-                <marker date="1515791749567" expanded="true" signature="2834:2883" ph="INSERT into user... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IFriendRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/IFriendRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/MessageRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="38" column="9" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="38" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1515860492732" expanded="true" signature="402:461" ph="INSERT into message... " />
-                <marker date="1515860492732" expanded="true" signature="1468:1590" ph="SELECT * FRO... message" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IChatManagerServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/IChatManagerServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChatManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/ChatManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="110" column="64" lean-forward="false" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
+            <state relative-caret-position="375">
+              <caret line="148" column="65" lean-forward="false" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/domain/cryptWithMD5.java" />
         <option value="$PROJECT_DIR$/src/domain/CryptWithMD5.java" />
         <option value="$PROJECT_DIR$/src/client/RegisterUI/registerController.java" />
-        <option value="$PROJECT_DIR$/src/repositories/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/domain/User.java" />
         <option value="$PROJECT_DIR$/src/client/HomeUI/home.fxml" />
         <option value="$PROJECT_DIR$/src/client/ChatUI/chat.fxml" />
@@ -272,10 +158,11 @@
         <option value="$PROJECT_DIR$/src/repositories/ChatRepo.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IFriendRepo.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IChatManagerServer.java" />
-        <option value="$PROJECT_DIR$/src/server/ChatManager.java" />
-        <option value="$PROJECT_DIR$/src/repositories/FriendRepo.java" />
-        <option value="$PROJECT_DIR$/src/client/friendui/friendController.java" />
         <option value="$PROJECT_DIR$/src/server/ChatManagerServer.java" />
+        <option value="$PROJECT_DIR$/src/client/friendui/friendController.java" />
+        <option value="$PROJECT_DIR$/src/repositories/FriendRepo.java" />
+        <option value="$PROJECT_DIR$/src/repositories/UserRepo.java" />
+        <option value="$PROJECT_DIR$/src/server/ChatManager.java" />
       </list>
     </option>
   </component>
@@ -588,12 +475,12 @@
       <updated>1515504148056</updated>
       <workItem from="1515504150068" duration="432000" />
       <workItem from="1515759133357" duration="25223000" />
-      <workItem from="1515852307509" duration="19075000" />
+      <workItem from="1515852307509" duration="20099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44730000" />
+    <option name="totallyTimeSpent" value="45754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1551" height="840" extended-state="6" />
@@ -608,7 +495,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34135976" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482659" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14071661" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -994,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/chatui/chatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="146" column="0" lean-forward="true" selection-start-line="124" selection-start-column="4" selection-end-line="152" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interfaces/IUserRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1029,14 +908,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/MessageRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/client/chatui/chatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="2478">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/ChatManagerServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/friendui/friendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="141" column="74" lean-forward="false" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515860492732" expanded="true" signature="402:461" ph="INSERT into message... " />
-            <marker date="1515860492732" expanded="true" signature="1468:1590" ph="SELECT * FRO... message" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/FriendRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1515872386063" expanded="true" signature="459:466" ph="Select f.ID,... friend" />
+            <marker date="1515872386063" expanded="true" signature="459:683" ph="Select us.us... friend" />
+            <marker date="1515872386063" expanded="true" signature="1770:1777" ph="Select f.ID,... friend" />
+            <marker date="1515872386063" expanded="true" signature="1770:1994" ph="Select us.us... friend" />
+            <marker date="1515872386063" expanded="true" signature="3216:3278" ph="INSERT into friend... " />
+            <marker date="1515872386063" expanded="true" signature="4040:4081" ph="UPDATE frien... " />
+            <marker date="1515872386063" expanded="true" signature="4046:4054" ph="INSERT into message... " />
+            <marker date="1515872386063" expanded="true" signature="5120:5157" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="94" column="61" lean-forward="false" selection-start-line="94" selection-start-column="61" selection-end-line="94" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515872408092" expanded="true" signature="357:410" ph="SELECT * FRO... user" />
+            <marker date="1515872408092" expanded="true" signature="1617:1654" ph="SELECT * FRO... user" />
+            <marker date="1515872408092" expanded="true" signature="2834:2883" ph="INSERT into user... " />
           </folding>
         </state>
       </provider>
@@ -1051,22 +982,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/UserRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/repositories/MessageRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1527">
-          <caret line="93" column="38" lean-forward="false" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+        <state relative-caret-position="282">
+          <caret line="38" column="9" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515791749567" expanded="true" signature="357:410" ph="SELECT * FRO... user" />
-            <marker date="1515791749567" expanded="true" signature="1617:1654" ph="SELECT * FRO... user" />
-            <marker date="1515791749567" expanded="true" signature="2834:2883" ph="INSERT into user... " />
+            <marker date="1515860492732" expanded="true" signature="402:461" ph="INSERT into message... " />
+            <marker date="1515860492732" expanded="true" signature="1468:1590" ph="SELECT * FRO... message" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/interfaces/IChatManagerServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="294">
           <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding />
         </state>
@@ -1074,55 +1004,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ChatManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="110" column="64" lean-forward="false" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
+        <state relative-caret-position="375">
+          <caret line="148" column="65" lean-forward="false" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/FriendRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="89" column="49" lean-forward="false" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1515870397270" expanded="true" signature="499:506" ph="Select f.ID,... friend" />
-            <marker date="1515870397270" expanded="true" signature="499:723" ph="Select us.us... friend" />
-            <marker date="1515870397270" expanded="true" signature="1806:1813" ph="Select f.ID,... friend" />
-            <marker date="1515870397270" expanded="true" signature="1806:2030" ph="Select us.us... friend" />
-            <marker date="1515870397270" expanded="true" signature="3248:3310" ph="INSERT into friend... " />
-            <marker date="1515870397270" expanded="true" signature="4040:4081" ph="UPDATE frien... " />
-            <marker date="1515870397270" expanded="true" signature="4046:4054" ph="INSERT into message... " />
-            <marker date="1515870397270" expanded="true" signature="5122:5159" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/friendui/friendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/ChatManagerServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>

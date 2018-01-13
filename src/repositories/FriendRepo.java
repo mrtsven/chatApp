@@ -1,8 +1,6 @@
 package repositories;
 
-import domain.Chat;
 import domain.Friend;
-import domain.User;
 import interfaces.IConnection;
 import interfaces.IFriendRepo;
 
@@ -34,7 +32,7 @@ public class FriendRepo implements IFriendRepo {
             }
 
         } catch (SQLException e) {
-            Logger.getGlobal().log(Level.SEVERE,"ChatRepo",e);
+            Logger.getGlobal().log(Level.SEVERE,"FriendRepo",e);
         }
         finally {
             try {
@@ -46,7 +44,7 @@ public class FriendRepo implements IFriendRepo {
                 }
                 conn.close();
             } catch (SQLException e) {
-                Logger.getGlobal().log(Level.SEVERE,"ChatRepo",e);
+                Logger.getGlobal().log(Level.SEVERE,"FriendRepo",e);
             }
         }
         //userId_Receiver
@@ -67,7 +65,7 @@ public class FriendRepo implements IFriendRepo {
             }
 
         } catch (SQLException e) {
-            Logger.getGlobal().log(Level.SEVERE,"ChatRepo",e);
+            Logger.getGlobal().log(Level.SEVERE,"friendRepo",e);
         }
         finally {
             try {
@@ -79,7 +77,7 @@ public class FriendRepo implements IFriendRepo {
                 }
                 conn.close();
             } catch (SQLException e) {
-                Logger.getGlobal().log(Level.SEVERE,"ChatRepo",e);
+                Logger.getGlobal().log(Level.SEVERE,"friendRepo",e);
             }
         }
         return friends;
@@ -99,7 +97,7 @@ public class FriendRepo implements IFriendRepo {
                 preparedStmt.execute();
                 conn.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                Logger.getGlobal().log(Level.SEVERE,"friendRepo",e);
                 return false;
             }
             return true;
@@ -127,7 +125,7 @@ public class FriendRepo implements IFriendRepo {
             preparedStmt.setInt(2,friendRequestID);
             preparedStmt.execute();
         } catch (SQLException e) {
-            Logger.getGlobal().log(Level.SEVERE,"MessageRepo",e);
+            Logger.getGlobal().log(Level.SEVERE,"friendRepo",e);
         }
         finally {
             try {
@@ -136,7 +134,7 @@ public class FriendRepo implements IFriendRepo {
                 }
                 conn.close();
             } catch (SQLException e) {
-                Logger.getGlobal().log(Level.SEVERE,"MessageRepo",e);
+                Logger.getGlobal().log(Level.SEVERE,"friendRepo",e);
             }
         }
     }
