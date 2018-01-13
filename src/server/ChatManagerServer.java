@@ -49,8 +49,12 @@ public class ChatManagerServer {
         }
 
         // Bind student administration using registry
+
         try {
-            registry.rebind(bindingName, chatManager);
+            if(registry != null)
+            {
+                registry.rebind(bindingName, chatManager);
+            }
         } catch (RemoteException ex) {
             System.out.println("Server: Cannot bind student administration");
             System.out.println("Server: RemoteException: " + ex.getMessage());
