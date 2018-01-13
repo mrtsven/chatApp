@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IChatRepo {
     List<Chat> getChats(int userid);
-    void createChat(int userid, int newChatUserID);
+    void createChat(String chatName, int userid);
 
 }

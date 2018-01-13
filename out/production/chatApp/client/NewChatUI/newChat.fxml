@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="269.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.NewChatUI.newChatController">
+   <children>
+      <TextField fx:id="txt_chatname" layoutX="15.0" layoutY="104.0" prefHeight="31.0" prefWidth="278.0" />
+      <Button layoutX="195.0" layoutY="211.0" mnemonicParsing="false" onAction="#createChat" text="Create Chat" />
+      <Label fx:id="txt_username" layoutX="44.0" layoutY="23.0" text="Hello " />
+      <Button layoutX="15.0" layoutY="211.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Back" />
+   </children>
+</AnchorPane>

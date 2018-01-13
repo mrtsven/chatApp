@@ -58,18 +58,18 @@ public class ChatRepo implements IChatRepo {
     }
 
     @Override
-    public void createChat(int userid, int newChatUserID) {
-        String queryCreateChat = " insert into chat (name) value ('new chat')";
+    public void createChat(String chatName, int userid) {
+        String queryCreateChat = " insert into chat (name) value (?)";
         String queryJoinChat = " insert into user_chat (userID,chatID)"
                 + " values (?, ?)";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
         PreparedStatement preparedStmt = null;
         PreparedStatement preparedStmt2 = null;
-        PreparedStatement preparedStmt3 = null;
         ResultSet rs = null;
         try {
             preparedStmt = conn.prepareStatement(queryCreateChat, Statement.RETURN_GENERATED_KEYS);
+            preparedStmt.setString(1,chatName);
             preparedStmt.execute();
             rs = preparedStmt.getGeneratedKeys();
             int generatedKey = 0;
@@ -81,10 +81,6 @@ public class ChatRepo implements IChatRepo {
             preparedStmt2.setInt (1, userid);
             preparedStmt2.setInt (2, generatedKey);
             preparedStmt2.execute();
-            preparedStmt3 = conn.prepareStatement(queryJoinChat);
-            preparedStmt3.setInt (1, newChatUserID);
-            preparedStmt3.setInt (2, generatedKey);
-            preparedStmt3.execute();
         } catch (SQLException e) {
             Logger.getGlobal().log(Level.SEVERE,"ChatRepo",e);
         }
@@ -98,9 +94,6 @@ public class ChatRepo implements IChatRepo {
                 }
                 if (preparedStmt2 != null) {
                     preparedStmt2.close();
-                }
-                if (preparedStmt3 != null) {
-                    preparedStmt3.close();
                 }
                 conn.close();
             } catch (SQLException e) {

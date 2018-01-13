@@ -77,6 +77,11 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     }
 
     @Override
+    public void createChat(String chatname,int userid) {
+
+    }
+
+    @Override
     public void addListener(IListener listener) {
         if (timerPause) {
             timerPause = false;

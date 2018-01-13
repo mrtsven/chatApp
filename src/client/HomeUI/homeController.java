@@ -1,16 +1,24 @@
 package client.HomeUI;
 
+import client.NewChatUI.newChatController;
 import domain.Chat;
 import domain.Session;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class homeController {
     private Session session;
@@ -66,6 +74,29 @@ public class homeController {
         {
             selectedChat = null;
         }
+    }
+    @FXML
+    private void toNewChat()  {
+        // Set the next "page" (scene) to display.
+        // Note that an incorrect path will result in unexpected NullPointer exceptions!
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../NewChatUI/newChat.fxml"));
+
+        Parent root = null;
+        try {
+            root = (Parent)fxmlLoader.load();
+        } catch (IOException e) {
+            Logger.getGlobal().log(Level.SEVERE,"homeController",e);
+        }
+        newChatController controller = fxmlLoader.<newChatController>getController();
+        controller.setSettings(session);
+        // There's no additional data required by the newly opened form.
+        Scene registerScreen = new Scene(root);
+
+        Stage stage;
+        stage = (Stage) txt_username.getScene().getWindow(); // Weird backwards logic trick to get the current scene window.
+
+        stage.setScene(registerScreen);
+        stage.show();
     }
 
 
