@@ -12,5 +12,5 @@ public interface IChatManagerServer extends  IRemotePublisher, Remote {
     boolean register(String username, String password) throws RemoteException;
     List<Chat>getChats() throws RemoteException;
     void createChat(String Chatname, int userid)throws RemoteException;
-
+    void sendMessage(int userId, int chatId, String msg) throws RemoteException;
 }

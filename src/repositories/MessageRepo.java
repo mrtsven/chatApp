@@ -13,8 +13,8 @@ import java.util.logging.Logger;
 public class MessageRepo implements IMessageRepo {
 
     @Override
-    public void sendMessage(int userId, int chatId, String content) {
-        String query = "INSERT into message(chatid, userid,content) VALUES(?, ?, ?);";
+    public void sendMessage(int userId, int chatId, String msg) {
+        String query = "INSERT into message(chatid, userid,msg) VALUES(?, ?, ?);";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
         PreparedStatement preparedStmt = null;
@@ -22,7 +22,7 @@ public class MessageRepo implements IMessageRepo {
             preparedStmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             preparedStmt.setInt(1, chatId);
             preparedStmt.setInt(2,userId);
-            preparedStmt.setString(3,content);
+            preparedStmt.setString(3,msg);
             preparedStmt.execute();
         } catch (SQLException e) {
             Logger.getGlobal().log(Level.SEVERE,"MessageRepo",e);

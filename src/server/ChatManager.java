@@ -1,6 +1,7 @@
 package server;
 
 import domain.Chat;
+import domain.Message;
 import domain.User;
 import interfaces.*;
 import repositories.ChatRepo;
@@ -25,6 +26,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     private IUserRepo userRepo;
     private IMessageRepo msgRepo;
     private IChatRepo chatRepo;
+    private IMessageRepo messageRepo;
     private List<IListener> listeners = new ArrayList<>();
     private Timer messageTimer;
     private boolean timerPause = true;
@@ -34,6 +36,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
         userRepo = new UserRepo();
         msgRepo = new MessageRepo();
         chatRepo = new ChatRepo();
+        messageRepo = new MessageRepo();
         messageTimer = new Timer();
         messageTimer.schedule(new TimerTask() {
             @Override
@@ -79,6 +82,28 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     @Override
     public void createChat(String chatname,int userid) throws RemoteException{
         chatRepo.createChat(chatname, userid);
+    }
+
+    @Override
+    public void sendMessage(int userId, int chatId, String msg) throws RemoteException {
+        if (!timerPause)
+        {
+            for (IListener l:listeners
+                    ) {
+                if (l.getChatId() == chatId)
+                {
+                    if (l.getUserId() == userId)
+                    {
+                        l.addMessage(new Message(0,msg,false));
+                    }
+                    else
+                    {
+                        l.addMessage(new Message(0,msg,true));
+                    }
+                }
+            }
+        }
+        messageRepo.sendMessage(userId,chatId,msg);
     }
 
     @Override
