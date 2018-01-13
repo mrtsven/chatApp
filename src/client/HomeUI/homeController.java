@@ -2,7 +2,9 @@ package client.HomeUI;
 
 import client.ChatUI.chatController;
 import client.NewChatUI.newChatController;
+import client.friendui.friendController;
 import domain.Chat;
+import domain.Friend;
 import domain.Session;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,7 +52,7 @@ public class homeController {
     private void loadChats()
     {
         tv_chats.getItems().clear();
-        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("username"));
+        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("user_Name"));
         tc_chatname.setCellValueFactory(new PropertyValueFactory<Chat,String>("name"));
         try {
             chats = session.getServer().getChats();
@@ -70,6 +72,7 @@ public class homeController {
         if (tv_chats.getSelectionModel().getSelectedItem() != null)
         {
             selectedChat = tv_chats.getSelectionModel().getSelectedItem();
+            System.out.println(selectedChat.getUser_Name());
         }
         else
         {
@@ -112,6 +115,29 @@ public class homeController {
             Logger.getGlobal().log(Level.SEVERE,"homeController",e);
         }
         newChatController controller = fxmlLoader.<newChatController>getController();
+        controller.setSettings(session);
+        // There's no additional data required by the newly opened form.
+        Scene registerScreen = new Scene(root);
+
+        Stage stage;
+        stage = (Stage) txt_username.getScene().getWindow(); // Weird backwards logic trick to get the current scene window.
+
+        stage.setScene(registerScreen);
+        stage.show();
+    }
+    @FXML
+    private void toFriends()  {
+        // Set the next "page" (scene) to display.
+        // Note that an incorrect path will result in unexpected NullPointer exceptions!
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../friendui/friend.fxml"));
+
+        Parent root = null;
+        try {
+            root = (Parent)fxmlLoader.load();
+        } catch (IOException e) {
+            Logger.getGlobal().log(Level.SEVERE,"homeController",e);
+        }
+        friendController controller = fxmlLoader.<friendController>getController();
         controller.setSettings(session);
         // There's no additional data required by the newly opened form.
         Scene registerScreen = new Scene(root);

@@ -1,10 +1,12 @@
 package server;
 
 import domain.Chat;
+import domain.Friend;
 import domain.Message;
 import domain.User;
 import interfaces.*;
 import repositories.ChatRepo;
+import repositories.FriendRepo;
 import repositories.MessageRepo;
 import repositories.UserRepo;
 
@@ -21,14 +23,12 @@ import java.util.logging.Logger;
 
 public class ChatManager extends UnicastRemoteObject implements IChatManagerServer {
 
-
-
     private IUserRepo userRepo;
     private IMessageRepo msgRepo;
     private IChatRepo chatRepo;
     private IMessageRepo messageRepo;
+    private IFriendRepo friendRepo;
     private List<IListener> listeners = new ArrayList<>();
-    private Timer messageTimer;
     private boolean timerPause = true;
 
     public ChatManager() throws RemoteException {
@@ -37,31 +37,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
         msgRepo = new MessageRepo();
         chatRepo = new ChatRepo();
         messageRepo = new MessageRepo();
-        messageTimer = new Timer();
-        messageTimer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                UpdateListeners();
-
-            }
-        }, 1000 , 50);
-    }
-
-    private void UpdateListeners() {
-        if (!timerPause) {
-            if (listeners.isEmpty()) {
-                timerPause = true;
-            }
-            for (IListener l : listeners) {
-                try {
-                    if (l.getchatMessages().isEmpty()) {
-                        l.setChatMessages(msgRepo.getMessages(l.getChatId(), l.getUserId()));
-                    }
-                } catch (RemoteException e) {
-                    Logger.getGlobal().log(Level.SEVERE,"ChatManager",e);
-                }
-            }
-        }
+        friendRepo = new FriendRepo();
     }
 
     @Override
@@ -85,7 +61,7 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     }
 
     @Override
-    public void sendMessage(int userId, int chatId, String msg) throws RemoteException {
+    public void sendMessage(int userId,String username, int chatId, String msg) throws RemoteException {
         if (!timerPause)
         {
             for (IListener l:listeners
@@ -94,11 +70,11 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
                 {
                     if (l.getUserId() == userId)
                     {
-                        l.addMessage(new Message(0,msg,false));
+                        l.addMessage(new Message(0,username,msg,false));
                     }
                     else
                     {
-                        l.addMessage(new Message(0,msg,true));
+                        l.addMessage(new Message(0,username,msg,true));
                     }
                 }
             }
@@ -107,15 +83,73 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     }
 
     @Override
-    public void addListener(IListener listener) {
+    public synchronized List<String> getChatUsers(int chatid) throws RemoteException {
+        List<String> users = new ArrayList<>();
+        if (!timerPause) {
+            for (IListener user : listeners
+                    ) {
+                if (user.getChatId() == chatid) {
+                    users.add(user.getUserName());
+                }
+            }
+        }
+        return users;
+    }
+
+    @Override
+    public List<Friend> getFriends(int userid) throws RemoteException {
+        return friendRepo.getFriends(userid);
+    }
+
+    @Override
+    public boolean addFriend(int userSender, String username) throws RemoteException {
+        return addFriend(userSender, username);
+    }
+
+    @Override
+    public void updateFriendRequest(int userid, String username, boolean accept) throws RemoteException {
+
+    }
+
+    @Override
+    public synchronized void addListener(IListener listener) {
         if (timerPause) {
             timerPause = false;
         }
         listeners.add(listener);
+        try {
+            listener.setChatMessages(msgRepo.getMessages(listener.getChatId(), listener.getUserId()));
+            updateListeners(listener.getChatId());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private synchronized void updateListeners(int chatId) {
+        if (!timerPause) {
+            for (IListener user : listeners
+                    ) {
+                try {
+                    if (user.getChatId() == chatId) {
+                        user.setChatUsers(getChatUsers(chatId));
+                    }
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @Override
-    public void removeListener(IListener listener) {
+    public synchronized void removeListener(IListener listener) {
+        int chatID = 0;
+        try {
+            chatID = listener.getChatId();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
         listeners.remove(listener);
+        updateListeners(chatID);
     }
 }

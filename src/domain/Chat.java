@@ -28,4 +28,6 @@ public class Chat implements Serializable{
 
     public User getUser(){ return user; }
 
+    public String getUser_Name() {        return this.user.getUsername();    }
+
 }

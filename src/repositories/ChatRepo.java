@@ -29,6 +29,7 @@ public class ChatRepo implements IChatRepo {
         ResultSet rs = null;
         try {
             preparedStmt = conn.prepareStatement(getChats, Statement.RETURN_GENERATED_KEYS);
+
             rs = preparedStmt.executeQuery();
             while (rs.next()) {
                 chats.add(new Chat(rs.getInt("chat_ID"),

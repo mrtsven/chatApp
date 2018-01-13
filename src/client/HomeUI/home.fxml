@@ -17,7 +17,7 @@
       </TableView>
       <Button layoutX="525.0" layoutY="355.0" mnemonicParsing="false" onAction="#loadChats" text="Refresh" />
       <Button layoutX="462.0" layoutY="122.0" mnemonicParsing="false" onAction="#joinChat" prefHeight="31.0" prefWidth="98.0" text="Join Chat" />
-      <Button layoutX="462.0" layoutY="229.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Friends" />
+      <Button layoutX="462.0" layoutY="229.0" mnemonicParsing="false" onAction="#toFriends" prefHeight="31.0" prefWidth="98.0" text="Friends" />
       <Label fx:id="txt_username" layoutX="462.0" layoutY="33.0" text="Hello" />
    </children>
 </AnchorPane>

@@ -12,10 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -33,13 +30,15 @@ public class chatController extends UnicastRemoteObject implements IListener{
     @FXML
     private ListView lv_messages;
     @FXML
-    private TextArea txt_message;
+    private TextField txt_message;
+    @FXML
+    private ListView list_people;
 
     private Session session;
     private Chat chat;
     private List<Message> messages = new ArrayList<>();
+    private List<String> users = new ArrayList<>();
     private AnimationTimer messageTimer;
-    boolean autoScroll = false;
 
     public chatController() throws RemoteException {
         messageTimer = new AnimationTimer() {
@@ -52,15 +51,18 @@ public class chatController extends UnicastRemoteObject implements IListener{
     }
 
     private void updateListViewMessages() {
-        lv_messages.setCellFactory(t -> new CustomListCell(chat.getUser().getUsername(),lv_messages.getWidth()));
+        lv_messages.setCellFactory(t -> new CustomListCell(lv_messages.getWidth()));
         lv_messages.getItems().clear();
         for (Message message:messages
                 ) {
             lv_messages.getItems().add(message);
         }
-        if (autoScroll) {
-            Platform.runLater(() -> lv_messages.scrollTo(lv_messages.getItems().size() - 1));
+        list_people.getItems().clear();
+        for (String user: users)
+        {
+            list_people.getItems().add(user);
         }
+
     }
 
     public void setup(Session session, Chat chat)
@@ -79,7 +81,17 @@ public class chatController extends UnicastRemoteObject implements IListener{
     public void setChatMessages(List<Message> messages) throws RemoteException {
         this.messages = messages;
     }
-
+    @FXML
+    public void sendMessage() {
+        if (!txt_message.getText().trim().isEmpty()) {
+            try {
+                session.getServer().sendMessage(session.getUser().getId(),session.getUser().getUsername(), chat.getId(), txt_message.getText());
+            } catch (RemoteException e) {
+                errorServer();
+            }
+            txt_message.clear();
+        }
+    }
     @Override
     public int getChatId() throws RemoteException {
         return this.chat.getId();
@@ -100,8 +112,18 @@ public class chatController extends UnicastRemoteObject implements IListener{
         this.messages.add(message);
     }
 
+    @Override
+    public String getUserName() throws RemoteException {
+        return session.getUser().getUsername();
+    }
+
+    @Override
+    public void setChatUsers(List<String> users) throws RemoteException {
+        this.users = users;
+    }
+
     @FXML
-    private void toHomeScreen(User user)  {
+    public void toHomeScreen()  {
         try {
             session.getServer().removeListener(this);
         } catch (RemoteException e) {

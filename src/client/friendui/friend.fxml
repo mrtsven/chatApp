@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="472.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.friendui.friendController">
+    <children>
+        <TableView fx:id="tv_friends" layoutX="22.0" layoutY="50.0" onMouseClicked="#selectedFriend" prefHeight="372.0" prefWidth="402.0">
+            <columns>
+                <TableColumn fx:id="tc_user" editable="false" prefWidth="197.0" text="User" />
+                <TableColumn fx:id="tc_status" editable="false" prefWidth="201.0" text="Status" />
+            </columns>
+        </TableView>
+        <Label fx:id="txt_username" layoutX="85.0" layoutY="23.0" text="Hello" />
+        <Button fx:id="btn_decline" layoutX="259.0" layoutY="426.0" mnemonicParsing="false" onAction="#decline" prefHeight="26.0" prefWidth="83.0" text="Decline" />
+        <Button fx:id="btn_accept" layoutX="350.0" layoutY="426.0" mnemonicParsing="false" onAction="#accept" text="Accept" />
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#toHomeScreen" text="Back" />
+      <Button fx:id="btn_addFriend" layoutX="157.0" layoutY="426.0" mnemonicParsing="false" onAction="#addFriend" text="Add Friend" />
+      <TextField fx:id="txt_addfriend" layoutX="23.0" layoutY="426.0" prefHeight="31.0" prefWidth="124.0" />
+    </children>
+</AnchorPane>

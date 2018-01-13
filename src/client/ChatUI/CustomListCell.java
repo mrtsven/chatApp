@@ -8,10 +8,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 public class CustomListCell extends ListCell<Message> {
-    private String username;
     private double width;
-    public CustomListCell(String username, double width) {
-        this.username = username;
+    public CustomListCell(double width) {
         this.width = width;
     }
     protected void updateItem(Message item, boolean empty) {
@@ -21,7 +19,7 @@ public class CustomListCell extends ListCell<Message> {
         if (!empty) {
             pane = new Pane();
             if (item.getReceiver()) {
-                final Text leftText = new Text(username + ": " + item.getMsg());
+                final Text leftText = new Text(item.getUsername() + ": " + item.getMsg());
                 leftText.setFont(Font.font("STYLE_BOLD",16));
                 //leftText.setFont(_itemFont);
                 leftText.setTextOrigin(VPos.TOP);

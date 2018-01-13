@@ -14,7 +14,7 @@ public class MessageRepo implements IMessageRepo {
 
     @Override
     public void sendMessage(int userId, int chatId, String msg) {
-        String query = "INSERT into message(chatid, userid,msg) VALUES(?, ?, ?);";
+        String query = "INSERT into message(chatid, userid,content) VALUES(?, ?, ?);";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
         PreparedStatement preparedStmt = null;
@@ -42,7 +42,9 @@ public class MessageRepo implements IMessageRepo {
     @Override
     public List<Message> getMessages(int chatId, int userId) {
         List<Message> messages = new ArrayList<>();
-        String query = "SELECT * FROM message WHERE chatid = ?;";
+        String query = "SELECT * FROM message m\n" +
+                "join user u on u.id_user = m.userID\n" +
+                "WHERE m.chatID = ?;";
         IConnection connection = new ConnectionManager();
         Connection conn  = connection.getConnection();
         PreparedStatement preparedStmt = null;
@@ -54,11 +56,11 @@ public class MessageRepo implements IMessageRepo {
             while (rs.next()) {
                 if (rs.getInt("userId") == userId)
                 {
-                    messages.add(new Message(rs.getInt("id"),rs.getString("content"),false));
+                    messages.add(new Message(rs.getInt("id"),rs.getString("username"),rs.getString("content"),false));
                 }
                 else
                 {
-                    messages.add(new Message(rs.getInt("id"),rs.getString("content"),true));
+                    messages.add(new Message(rs.getInt("id"),rs.getString("username"),rs.getString("content"),true));
                 }
             }
             conn.close();

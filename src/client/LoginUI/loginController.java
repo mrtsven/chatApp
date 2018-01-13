@@ -99,6 +99,7 @@ public class loginController {
         stage = (Stage) txt_username.getScene().getWindow(); // Weird backwards logic trick to get the current scene window.
 
         stage.setScene(registerScreen);
+        stage.setTitle("Home");
         stage.show();
     }
 
