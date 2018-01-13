@@ -72,13 +72,13 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
     }
 
     @Override
-    public List<Chat> getChats(int id) throws RemoteException {
-        return chatRepo.getChats(id);
+    public List<Chat> getChats() throws RemoteException {
+        return chatRepo.getChats();
     }
 
     @Override
-    public void createChat(String chatname,int userid) {
-
+    public void createChat(String chatname,int userid) throws RemoteException{
+        chatRepo.createChat(chatname, userid);
     }
 
     @Override

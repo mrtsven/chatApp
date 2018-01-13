@@ -14,28 +14,26 @@ import java.util.logging.Logger;
 public class ChatRepo implements IChatRepo {
 
     @Override
-    public List<Chat> getChats(int userId) {
+    public List<Chat> getChats() {
         List<Chat> chats = new ArrayList<>();
-        String getChats = "Select c.ID,c.name,u.ID as userID, u.username from chat c\n" +
-                "join user_chat uc on uc.ChatID=c.ID\n" +
-                "join user u on u.ID=uc.UserID\n" +
-                "Where c.ID in (Select c.ID from chat c\n" +
-                "join user_chat uc on uc.ChatID=c.ID\n" +
-                "join user u on u.ID=uc.UserID\n" +
-                "where u.ID = ?) and u.ID != ?";
+        String getChats = "Select c.chat_ID,c.name,u.id_user as userID, u.username from chat c\n" +
+                "join chat_user uc on uc.chat_id=c.chat_ID\n" +
+                "join user u on u.id_user=uc.user_id\n" +
+                "Where c.chat_Id in (Select c.chat_ID from chat c\n" +
+                "join chat_user uc on uc.chat_id=c.chat_ID\n" +
+                "join user u on u.id_user=uc.user_id\n" +
+                ")";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
         PreparedStatement preparedStmt = null;
         ResultSet rs = null;
         try {
             preparedStmt = conn.prepareStatement(getChats, Statement.RETURN_GENERATED_KEYS);
-            preparedStmt.setInt (1, userId);
-            preparedStmt.setInt (2, userId);
             rs = preparedStmt.executeQuery();
             while (rs.next()) {
-                chats.add(new Chat(rs.getInt("chat_id"),
+                chats.add(new Chat(rs.getInt("chat_ID"),
                         rs.getString("name"),
-                        new User(rs.getInt("id_user"),rs.getString("username"))));
+                        new User(rs.getInt("userID"),rs.getString("username"))));
             }
 
         } catch (SQLException e) {
@@ -60,12 +58,13 @@ public class ChatRepo implements IChatRepo {
     @Override
     public void createChat(String chatName, int userid) {
         String queryCreateChat = " insert into chat (name) value (?)";
-        String queryJoinChat = " insert into user_chat (userID,chatID)"
+        String queryJoinChat = " insert into chat_user (user_id,chat_id)"
                 + " values (?, ?)";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
         PreparedStatement preparedStmt = null;
         PreparedStatement preparedStmt2 = null;
+        PreparedStatement preparedStmt3 = null;
         ResultSet rs = null;
         try {
             preparedStmt = conn.prepareStatement(queryCreateChat, Statement.RETURN_GENERATED_KEYS);

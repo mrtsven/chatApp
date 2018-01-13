@@ -1,5 +1,6 @@
 package client.HomeUI;
 
+import client.ChatUI.chatController;
 import client.NewChatUI.newChatController;
 import domain.Chat;
 import domain.Session;
@@ -49,10 +50,10 @@ public class homeController {
     private void loadChats()
     {
         tv_chats.getItems().clear();
-        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("user_Name"));
+        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("User"));
         tc_chatname.setCellValueFactory(new PropertyValueFactory<Chat,String>("Chatname"));
         try {
-            chats = session.getServer().getChats(session.getUser().getId());
+            chats = session.getServer().getChats();
             if (!chats.isEmpty()) {
                 for (Chat i : chats) {
                     tv_chats.getItems().add(i);
@@ -75,6 +76,29 @@ public class homeController {
             selectedChat = null;
         }
     }
+
+    @FXML
+    private void joinChat(){
+        if (selectedChat != null) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatUI/chat.fxml"));
+
+            Parent root = null;
+            try {
+                root = (Parent)fxmlLoader.load();
+            } catch (IOException e) {
+                Logger.getGlobal().log(Level.SEVERE,"homeController",e);
+            }
+            chatController controller = fxmlLoader.<chatController>getController();
+            controller.setup(session, selectedChat);
+            // There's no additional data required by the newly opened form.
+            Scene registerScreen = new Scene(root);
+            Stage stage;
+            stage = (Stage) txt_username.getScene().getWindow(); // Weird backwards logic trick to get the current scene window.
+            stage.setScene(registerScreen);
+            stage.show();
+        }
+    }
+
     @FXML
     private void toNewChat()  {
         // Set the next "page" (scene) to display.

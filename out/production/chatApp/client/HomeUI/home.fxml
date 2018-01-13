@@ -6,19 +6,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.HomeUI.homeController">
    <children>
-      <Button layoutX="462.0" layoutY="79.0" mnemonicParsing="false"  text="Create Chat" />
-      <TableView fx:id="tv_chats" layoutX="14.0" layoutY="20.0" prefHeight="372.0" prefWidth="402.0">
+      <Button layoutX="462.0" layoutY="79.0" mnemonicParsing="false" onAction="#toNewChat" text="Create Chat" />
+      <TableView fx:id="tv_chats" layoutX="14.0" layoutY="20.0" onMouseClicked="#selectedChat" prefHeight="372.0" prefWidth="402.0">
         <columns>
           <TableColumn fx:id="tc_user" editable="false" prefWidth="197.0" text="User" />
           <TableColumn fx:id="tc_chatname" editable="false" prefWidth="201.0" text="Chatname" />
         </columns>
       </TableView>
-      <Button layoutX="525.0" layoutY="355.0" mnemonicParsing="false" text="Refresh" />
-      <Button layoutX="462.0" layoutY="122.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="98.0" text="Join Chat" />
-      <Button layoutX="462.0" layoutY="229.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="98.0" text="Friends" />
+      <Button layoutX="525.0" layoutY="355.0" mnemonicParsing="false" onAction="#loadChats" text="Refresh" />
+      <Button layoutX="462.0" layoutY="122.0" mnemonicParsing="false" onAction="#joinChat" prefHeight="31.0" prefWidth="98.0" text="Join Chat" />
+      <Button layoutX="462.0" layoutY="229.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Friends" />
       <Label fx:id="txt_username" layoutX="462.0" layoutY="33.0" text="Hello" />
    </children>
 </AnchorPane>

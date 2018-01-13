@@ -5,7 +5,7 @@ import domain.Chat;
 import java.util.List;
 
 public interface IChatRepo {
-    List<Chat> getChats(int userid);
+    List<Chat> getChats();
     void createChat(String chatName, int userid);
 
 }

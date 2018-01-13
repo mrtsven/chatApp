@@ -37,10 +37,15 @@ public class newChatController {
     @FXML
     private void createChat()
     {
-        if (txt_chatname.getText().trim().isEmpty())
+        if (!txt_chatname.getText().trim().isEmpty())
         {
-            session.getServer().createChat(txt_chatname.getText(),session.getUser().getId());
-            toHomeScreen();
+            try {
+                session.getServer().createChat(txt_chatname.getText(),session.getUser().getId());
+                toHomeScreen();
+            } catch (RemoteException e) {
+                errorServer();
+            }
+
         }
     }
 
