@@ -1,4 +1,4 @@
-package client.ChatUI;
+package client.chatui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

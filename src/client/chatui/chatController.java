@@ -1,19 +1,16 @@
-package client.ChatUI;
+package client.chatui;
 
-import client.HomeUI.homeController;
+import client.homeui.homeController;
 import domain.Chat;
 import domain.Message;
 import domain.Session;
-import domain.User;
 import interfaces.IListener;
 import javafx.animation.AnimationTimer;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -132,7 +129,7 @@ public class chatController extends UnicastRemoteObject implements IListener{
         messageTimer.stop();
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HomeUI/home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../homeui/home.fxml"));
 
         Parent root = null;
         try {

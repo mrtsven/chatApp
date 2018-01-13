@@ -1,8 +1,7 @@
-package client.LoginUI;
+package client.loginui;
 
-import client.HomeUI.homeController;
+import client.homeui.homeController;
 import client.RegisterUI.registerController;
-import domain.CryptWithMD5;
 import domain.Session;
 import domain.User;
 import interfaces.IChatManagerServer;
@@ -17,13 +16,10 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -82,7 +78,7 @@ public class loginController {
     private void toHomeScreen(User user)  {
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HomeUI/home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../homeui/home.fxml"));
 
         Parent root = null;
         try {

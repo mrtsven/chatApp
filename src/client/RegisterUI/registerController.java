@@ -1,9 +1,7 @@
 package client.RegisterUI;
 
-import client.LoginUI.loginController;
+import client.loginui.loginController;
 import domain.Session;
-import domain.User;
-import interfaces.IChatManagerServer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,10 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.rmi.RemoteException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 
 import static domain.CryptWithMD5.md5;
@@ -68,7 +63,7 @@ public class registerController {
     }
 
     private void backToLogin() {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../LoginUI/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../loginui/login.fxml"));
         Parent root = null;
         try {
             root = (Parent) fxmlLoader.load();

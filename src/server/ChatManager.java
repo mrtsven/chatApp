@@ -103,12 +103,12 @@ public class ChatManager extends UnicastRemoteObject implements IChatManagerServ
 
     @Override
     public boolean addFriend(int userSender, String username) throws RemoteException {
-        return addFriend(userSender, username);
+        return friendRepo.addFriend(userSender, username);
     }
 
     @Override
-    public void updateFriendRequest(int userid, String username, boolean accept) throws RemoteException {
-
+    public void updateFriendRequest(int FriendRequestID, boolean accept) throws RemoteException {
+        friendRepo.updateFriendRequest(FriendRequestID, accept);
     }
 
     @Override

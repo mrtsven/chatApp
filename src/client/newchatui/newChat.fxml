@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="269.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.NewChatUI.newChatController">
+<AnchorPane prefHeight="269.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.newchatui.newChatController">
    <children>
       <TextField fx:id="txt_chatname" layoutX="15.0" layoutY="104.0" prefHeight="31.0" prefWidth="278.0" />
       <Button layoutX="195.0" layoutY="211.0" mnemonicParsing="false" onAction="#createChat" text="Create Chat" />

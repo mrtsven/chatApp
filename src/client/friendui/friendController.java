@@ -1,7 +1,6 @@
 package client.friendui;
 
-import client.HomeUI.homeController;
-import domain.Chat;
+import client.homeui.homeController;
 import domain.Friend;
 import domain.Session;
 import javafx.fxml.FXML;
@@ -24,6 +23,8 @@ public class friendController {
 
     @FXML
     private Label txt_username;
+    @FXML
+    private TextField txt_addfriend;
     @FXML
     private TableView<Friend> tv_friends;
     @FXML
@@ -64,10 +65,21 @@ public class friendController {
         if (tv_friends.getSelectionModel().getSelectedItem() != null)
         {
             selectedFriend = tv_friends.getSelectionModel().getSelectedItem();
+            if (selectedFriend.getStatus() == "Pending")
+            {
+                btn_accept.setVisible(true);
+                btn_decline.setVisible(true);
+            }
+            else {
+                btn_accept.setVisible(false);
+                btn_decline.setVisible(false);
+            }
         }
         else
         {
             selectedFriend = null;
+            btn_accept.setVisible(false);
+            btn_decline.setVisible(false);
         }
     }
     @FXML
@@ -75,7 +87,15 @@ public class friendController {
     {
         if (selectedFriend != null)
         {
-
+            try {
+                session.getServer().updateFriendRequest(selectedFriend.getId(),true);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+            loadFriends();
+            btn_accept.setVisible(false);
+            btn_decline.setVisible(false);
+            selectedFriend = null;
         }
     }
     @FXML
@@ -83,16 +103,24 @@ public class friendController {
     {
         if (selectedFriend != null)
         {
-
+            try {
+                session.getServer().updateFriendRequest(selectedFriend.getId(),false);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+            loadFriends();
+            btn_accept.setVisible(false);
+            btn_decline.setVisible(false);
+            selectedFriend = null;
         }
     }
     @FXML
     public void addFriend()
     {
-        if(!txt_username.getText().trim().isEmpty())
+        if(!txt_addfriend.getText().trim().isEmpty())
         {
             try {
-                if (session.getServer().addFriend(session.getUser().getId(),txt_username.getText()))
+                if (session.getServer().addFriend(session.getUser().getId(),txt_addfriend.getText()))
                 {
                     loadFriends();
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -120,14 +148,14 @@ public class friendController {
             alert.setContentText("You need to enter a name!");
             alert.show();
         }
-
+        txt_addfriend.clear();
     }
 
     @FXML
     public void toHomeScreen()  {
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HomeUI/home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../homeui/home.fxml"));
 
         Parent root = null;
         try {

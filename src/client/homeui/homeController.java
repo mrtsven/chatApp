@@ -1,10 +1,9 @@
-package client.HomeUI;
+package client.homeui;
 
-import client.ChatUI.chatController;
-import client.NewChatUI.newChatController;
+import client.chatui.chatController;
+import client.newchatui.newChatController;
 import client.friendui.friendController;
 import domain.Chat;
-import domain.Friend;
 import domain.Session;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -83,7 +82,7 @@ public class homeController {
     @FXML
     private void joinChat(){
         if (selectedChat != null) {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatUI/chat.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../chatui/chat.fxml"));
 
             Parent root = null;
             try {
@@ -106,7 +105,7 @@ public class homeController {
     private void toNewChat()  {
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../NewChatUI/newChat.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../newchatui/newChat.fxml"));
 
         Parent root = null;
         try {

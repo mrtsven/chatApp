@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.HomeUI.homeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.homeui.homeController">
    <children>
       <Button layoutX="462.0" layoutY="79.0" mnemonicParsing="false" onAction="#toNewChat" text="Create Chat" />
       <TableView fx:id="tv_chats" layoutX="14.0" layoutY="20.0" onMouseClicked="#selectedChat" prefHeight="372.0" prefWidth="402.0">

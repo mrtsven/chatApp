@@ -18,5 +18,5 @@ public interface IChatManagerServer extends  IRemotePublisher, Remote {
     List<String>getChatUsers(int chatid) throws RemoteException;
     List<Friend> getFriends(int userid)throws RemoteException;
     boolean addFriend(int userSender, String username)throws RemoteException;
-    void updateFriendRequest(int userid, String username, boolean accept)throws RemoteException;
+    void updateFriendRequest(int FriendRequestID, boolean accept)throws RemoteException;
 }

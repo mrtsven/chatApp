@@ -1,8 +1,7 @@
-package client.NewChatUI;
+package client.newchatui;
 
-import client.HomeUI.homeController;
+import client.homeui.homeController;
 import domain.Session;
-import domain.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -52,7 +51,7 @@ public class newChatController {
     private void toHomeScreen()  {
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HomeUI/home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../homeui/home.fxml"));
 
         Parent root = null;
         try {

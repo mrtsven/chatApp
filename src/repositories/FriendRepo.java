@@ -87,7 +87,7 @@ public class FriendRepo implements IFriendRepo {
 
     @Override
     public boolean addFriend(int userSender, String username) {
-        int userID = checkIfNameExists(username.toLowerCase());
+        int userID = checkIfNameExists(username);
         if(userID != 0){
             try {
                 String query = "INSERT into friend(userId_Sender,userId_Receiver) VALUES(?, ?);";
@@ -110,12 +110,39 @@ public class FriendRepo implements IFriendRepo {
     }
 
     @Override
-    public void updateFriendRequest(int userid, String username, boolean accept) {
-
+    public void updateFriendRequest(int friendRequestID, boolean accept) {
+        String query = "UPDATE friend set status = ? WHERE id = ?;";
+        IConnection connection = new ConnectionManager();
+        Connection conn = connection.getConnection();
+        PreparedStatement preparedStmt = null;
+        try {
+            preparedStmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            if (accept)
+            {
+                preparedStmt.setInt(1,2);
+            }
+            else {
+                preparedStmt.setInt(1,0);
+            }
+            preparedStmt.setInt(2,friendRequestID);
+            preparedStmt.execute();
+        } catch (SQLException e) {
+            Logger.getGlobal().log(Level.SEVERE,"MessageRepo",e);
+        }
+        finally {
+            try {
+                if (preparedStmt != null) {
+                    preparedStmt.close();
+                }
+                conn.close();
+            } catch (SQLException e) {
+                Logger.getGlobal().log(Level.SEVERE,"MessageRepo",e);
+            }
+        }
     }
+
     public int checkIfNameExists(String username) {
         int id = 0;
-        boolean exists = false;
         String query = "SELECT * FROM user WHERE username = ?;";
         IConnection connection = new ConnectionManager();
         Connection conn = connection.getConnection();
@@ -146,4 +173,6 @@ public class FriendRepo implements IFriendRepo {
         }
         return id;
     }
+
+
 }

@@ -15,10 +15,10 @@
             </columns>
         </TableView>
         <Label fx:id="txt_username" layoutX="85.0" layoutY="23.0" text="Hello" />
-        <Button fx:id="btn_decline" layoutX="259.0" layoutY="426.0" mnemonicParsing="false" onAction="#decline" prefHeight="26.0" prefWidth="83.0" text="Decline" />
-        <Button fx:id="btn_accept" layoutX="350.0" layoutY="426.0" mnemonicParsing="false" onAction="#accept" text="Accept" />
+        <Button fx:id="btn_decline" layoutX="259.0" layoutY="426.0" mnemonicParsing="false" onAction="#decline" prefHeight="26.0" prefWidth="83.0" text="Decline" visible="false" />
+        <Button fx:id="btn_accept" layoutX="350.0" layoutY="426.0" mnemonicParsing="false" onAction="#accept" text="Accept" visible="false" />
       <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#toHomeScreen" text="Back" />
-      <Button fx:id="btn_addFriend" layoutX="157.0" layoutY="426.0" mnemonicParsing="false" onAction="#addFriend" text="Add Friend" />
+      <Button layoutX="157.0" layoutY="426.0" mnemonicParsing="false" onAction="#addFriend" text="Add Friend" />
       <TextField fx:id="txt_addfriend" layoutX="23.0" layoutY="426.0" prefHeight="31.0" prefWidth="124.0" />
     </children>
 </AnchorPane>

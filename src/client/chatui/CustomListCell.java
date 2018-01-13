@@ -1,4 +1,4 @@
-package client.ChatUI;
+package client.chatui;
 
 import domain.Message;
 import javafx.geometry.VPos;
