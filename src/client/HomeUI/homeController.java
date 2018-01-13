@@ -50,8 +50,8 @@ public class homeController {
     private void loadChats()
     {
         tv_chats.getItems().clear();
-        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("User"));
-        tc_chatname.setCellValueFactory(new PropertyValueFactory<Chat,String>("Chatname"));
+        tc_user.setCellValueFactory(new PropertyValueFactory<Chat, String>("username"));
+        tc_chatname.setCellValueFactory(new PropertyValueFactory<Chat,String>("name"));
         try {
             chats = session.getServer().getChats();
             if (!chats.isEmpty()) {
