@@ -1,4 +1,4 @@
-package client.RegisterUI;
+package client.registerui;
 
 import client.loginui.loginController;
 import domain.Session;

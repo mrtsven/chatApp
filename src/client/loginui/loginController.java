@@ -1,7 +1,7 @@
 package client.loginui;
 
 import client.homeui.homeController;
-import client.RegisterUI.registerController;
+import client.registerui.registerController;
 import domain.Session;
 import domain.User;
 import interfaces.IChatManagerServer;
@@ -104,7 +104,7 @@ public class loginController {
     private void toRegisterScreen()  {
         // Set the next "page" (scene) to display.
         // Note that an incorrect path will result in unexpected NullPointer exceptions!
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../RegisterUI/register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../registerui/register.fxml"));
 
         Parent root = null;
         try {
