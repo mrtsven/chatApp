@@ -31,7 +31,7 @@ public class Friend implements Serializable {
             case 2:
                 return "Accepted";
                 default:
-                    return "error";
+                    return "Error";
         }
     }
 }

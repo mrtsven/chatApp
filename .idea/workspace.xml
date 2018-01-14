@@ -2,10 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ec00fbc-3d03-4833-8b41-60ee6631a3c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/friendui/friendController.java" afterPath="$PROJECT_DIR$/src/client/friendui/friendController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/FriendRepo.java" afterPath="$PROJECT_DIR$/src/repositories/FriendRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/UserRepo.java" afterPath="$PROJECT_DIR$/src/repositories/UserRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/ChatManager.java" afterPath="$PROJECT_DIR$/src/server/ChatManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/domaintest/ChatTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/domaintest/FriendTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/domaintest/MessageTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/domaintest/SessionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/domaintest/UserTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unittests/unittests.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chatApp/domain/Chat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chatApp/domain/Friend.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/CustomListCell.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/CustomListCell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatController$1.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatUI.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chatUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/homeController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/homeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/homeUI.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/homeUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/loginController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/loginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/loginUI.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/loginUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChatController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChatController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChatUI.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChatUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/registerController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/registerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/registerUI.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/registerUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/friendui/friendController.class" afterPath="$PROJECT_DIR$/out/production/chatApp/client/friendui/friendController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/repositories/FriendRepo.class" afterPath="$PROJECT_DIR$/out/production/chatApp/repositories/FriendRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/repositories/UserRepo.class" afterPath="$PROJECT_DIR$/out/production/chatApp/repositories/UserRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/server/ChatManager.class" afterPath="$PROJECT_DIR$/out/production/chatApp/server/ChatManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/server/ChatManagerServer.class" afterPath="$PROJECT_DIR$/out/production/chatApp/server/ChatManagerServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatApp.iml" afterPath="$PROJECT_DIR$/chatApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chat.fxml" afterPath="$PROJECT_DIR$/out/production/chatApp/client/ChatUI/chat.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/home.fxml" afterPath="$PROJECT_DIR$/out/production/chatApp/client/HomeUI/home.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/login.fxml" afterPath="$PROJECT_DIR$/out/production/chatApp/client/LoginUI/login.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChat.fxml" afterPath="$PROJECT_DIR$/out/production/chatApp/client/NewChatUI/newChat.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/register.fxml" afterPath="$PROJECT_DIR$/out/production/chatApp/client/RegisterUI/register.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/domain/Chat.java" afterPath="$PROJECT_DIR$/src/domain/Chat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/domain/Friend.java" afterPath="$PROJECT_DIR$/src/domain/Friend.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,16 +106,148 @@
     <SUITE FILE_PATH="coverage/chatApp$loginUI.coverage" NAME="loginUI Coverage Results" MODIFIED="1515865318080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>client.LoginUI.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/chatApp$domain_in_chatApp.coverage" NAME="domain in chatApp Coverage Results" MODIFIED="1515964309860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>domaintest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/chatApp$domaintest_in_chatApp.coverage" NAME="domaintest in chatApp Coverage Results" MODIFIED="1515964634820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>domain.*</FILTER>
+    </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ChatManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server/ChatManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="606">
               <caret line="148" column="65" lean-forward="false" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittests/domaintest/ChatTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Friend.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CryptWithMD5.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domain/CryptWithMD5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/Chat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittests/domaintest/FriendTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittests/domaintest/MessageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittests/domaintest/SessionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittests/domaintest/UserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +260,8 @@
       <list>
         <option value="XML Properties File" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,9 +276,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/repositories/IConnection.java" />
-        <option value="$PROJECT_DIR$/src/config.properties" />
-        <option value="$PROJECT_DIR$/src/repositories/IUserRepo.java" />
         <option value="$PROJECT_DIR$/src/client/RegisterUI/register.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IConnection.java" />
         <option value="$PROJECT_DIR$/src/server/chatManagerServer.java" />
@@ -143,7 +302,6 @@
         <option value="$PROJECT_DIR$/src/client/NewChatUI/newChat.fxml" />
         <option value="$PROJECT_DIR$/src/client/NewChatUI/newChatController.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IChatRepo.java" />
-        <option value="$PROJECT_DIR$/src/domain/Chat.java" />
         <option value="$PROJECT_DIR$/src/domain/Message.java" />
         <option value="$PROJECT_DIR$/src/interfaces/IMessageRepo.java" />
         <option value="$PROJECT_DIR$/src/client/ChatUI/CustomListCell.java" />
@@ -152,7 +310,6 @@
         <option value="$PROJECT_DIR$/src/client/ChatUI/chatController.java" />
         <option value="$PROJECT_DIR$/src/client/LoginUI/loginController.java" />
         <option value="$PROJECT_DIR$/src/client/friendui/friend.fxml" />
-        <option value="$PROJECT_DIR$/src/domain/Friend.java" />
         <option value="$PROJECT_DIR$/src/client/HomeUI/homeController.java" />
         <option value="$PROJECT_DIR$/src/client/friendui/friend.java" />
         <option value="$PROJECT_DIR$/src/repositories/ChatRepo.java" />
@@ -163,6 +320,13 @@
         <option value="$PROJECT_DIR$/src/repositories/FriendRepo.java" />
         <option value="$PROJECT_DIR$/src/repositories/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/server/ChatManager.java" />
+        <option value="$PROJECT_DIR$/unittests/domaintest/UserTest.java" />
+        <option value="$PROJECT_DIR$/unittests/domaintest/SessionTest.java" />
+        <option value="$PROJECT_DIR$/unittests/domaintest/ChatTest.java" />
+        <option value="$PROJECT_DIR$/src/domain/Chat.java" />
+        <option value="$PROJECT_DIR$/unittests/domaintest/MessageTest.java" />
+        <option value="$PROJECT_DIR$/unittests/domaintest/FriendTest.java" />
+        <option value="$PROJECT_DIR$/src/domain/Friend.java" />
       </list>
     </option>
   </component>
@@ -173,10 +337,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="-7" />
-    <option name="width" value="1551" />
-    <option name="height" value="840" />
+    <option name="x" value="768" />
+    <option name="width" value="768" />
+    <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -196,6 +359,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,66 +378,18 @@
               <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
               <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="chatui" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="friendui" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="homeui" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="newchatui" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="client" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="registerui" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
               <item name="domain" type="bbb3b172:PsiDirectoryNodeWrapper" />
             </path>
             <path>
               <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="interfaces" type="bbb3b172:PsiDirectoryNodeWrapper" />
+              <item name="unittests" type="bbb3b172:PsiDirectoryNodeWrapper" />
             </path>
             <path>
               <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="repositories" type="bbb3b172:PsiDirectoryNodeWrapper" />
-            </path>
-            <path>
-              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatApp" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="src" type="bbb3b172:PsiDirectoryNodeWrapper" />
-              <item name="server" type="bbb3b172:PsiDirectoryNodeWrapper" />
+              <item name="unittests" type="bbb3b172:PsiDirectoryNodeWrapper" />
+              <item name="domaintest" type="bbb3b172:PsiDirectoryNodeWrapper" />
             </path>
             <path>
               <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
@@ -281,10 +399,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +410,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -311,7 +426,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.loginUI">
+  <component name="RunManager" selected="JUnit.domaintest in chatApp">
     <configuration name="ChatManagerServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -330,6 +445,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="chatApp" />
       <envs />
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="domaintest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chatApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="domaintest" />
+      <option name="MAIN_CLASS_NAME" value="domaintest.UserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
@@ -412,6 +552,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="domaintest in chatApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="domaintest.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chatApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="domaintest" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="friend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -450,16 +619,20 @@
       <module name="chatApp" />
       <envs />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ChatManagerServer" />
       <item index="1" class="java.lang.String" itemvalue="Application.loginUI" />
       <item index="2" class="java.lang.String" itemvalue="Application.friend" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.domaintest in chatApp" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.loginUI" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ChatManagerServer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.friend" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.domaintest in chatApp" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.loginUI" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ChatManagerServer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.friend" />
       </list>
     </recent_temporary>
   </component>
@@ -475,12 +648,45 @@
       <updated>1515504148056</updated>
       <workItem from="1515504150068" duration="432000" />
       <workItem from="1515759133357" duration="25223000" />
-      <workItem from="1515852307509" duration="20099000" />
+      <workItem from="1515852307509" duration="20160000" />
+      <workItem from="1515962800272" duration="1833000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserTest - 2018.01.14 at 21h 56m 38s.xml">
+      <configuration name="UserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domain_in_chatApp - 2018.01.14 at 22h 11m 51s.xml">
+      <configuration name="domain in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 09m 52s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 11m 24s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 12m 55s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 14m 07s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 14m 19s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 15m 39s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 16m 45s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="domaintest_in_chatApp - 2018.01.14 at 22h 17m 17s.xml">
+      <configuration name="domaintest in chatApp" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45754000" />
+    <option name="totallyTimeSpent" value="47648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1551" height="840" extended-state="6" />
@@ -495,13 +701,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482659" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34135976" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14071661" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19283387" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21042345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31335506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -562,35 +768,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/chatServer/chatBotServer/ChatManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/server/chatServer/chatBotServer/ChatBotManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/registerui/register.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.xml" />
     <entry file="file://$PROJECT_DIR$/src/config.properties" />
     <entry file="file://$PROJECT_DIR$/chatApp.iml">
@@ -625,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/CryptWithMD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -654,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="843" column="35" lean-forward="false" selection-start-line="843" selection-start-column="35" selection-end-line="843" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,17 +915,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/homeui/home.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -841,9 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,14 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/friendui/friendController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-444">
@@ -1004,11 +1141,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ChatManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="606">
           <caret line="148" column="65" lean-forward="false" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittests/domaintest/SessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittests/domaintest/ChatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittests/domaintest/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittests/domaintest/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittests/domaintest/FriendTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/CryptWithMD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
